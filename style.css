@@ -163,6 +163,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 
@@ -302,5 +303,6 @@ footer{
     }
     .copy{
         width: 60%;
+          font-size:14px;
     }
 }
