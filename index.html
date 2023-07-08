@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <div class="logo"></div>
+            <label for="more"><i class="ri-menu-fill more"></i></label>
+            <input type="checkbox" id="more">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#new">What's New</a>
+                <a href="#sletter">Newsletter</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <div id="content">
+            <div class="text">
+                <h2>THAT'S WHAT <br><span>I LIKE</span></h2>
+                <!-- <h1></h1> -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fuga praesentium minima porro maiores
+                    sint optio placeat, quam a dolorum explicabo quis fugiat vero deleniti accusantium ab totam.
+                    Excepturi, optio?</p>
+
+                <button><a href="#">VIEW ALL PRODUCTS</a></button>
+            </div>
+
+            <div class="pep">
+                <div class="pep-img">
+                    <img src="pepsi001.png" alt="" id="star" class="star">
+                </div>
+                <div class="pep-media">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <footer>
+            <div class="changer">
+                <div class="c1 c">
+                    <img src="pepsi001.png" alt="" onclick="canChanger1();canBgChanger1()">
+                </div>
+                <div class="c2 c">
+                    <img src="pepsi002.png" alt="" onclick="canChanger2();canBgChanger2()">
+                </div>
+                <div class="c3 c">
+                    <img src="pepsi003.png" alt="" onclick="canChanger3();canBgChanger3()">
+                </div>
+            </div>
+
+            <div class="copy">
+                <p>Made by me &copy; with love &hearts;</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script>
+        function canChanger1() {
+            document.getElementById("star").src = "pepsi001.png";
+
+        }
+        function canChanger2() {
+            document.getElementById("star").src = "pepsi002.png";
+
+        }
+        function canChanger3() {
+            document.getElementById("star").src = "pepsi003.png";
+
+        }
+        // backgroundColor-Channer
+        function canBgChanger1() {
+            document.getElementById("main").style.backgroundColor = "#0062be";
+
+        }
+        function canBgChanger2() {
+            document.getElementById("main").style.backgroundColor = "#e60c2c";
+
+        }
+        function canBgChanger3() {
+            document.getElementById("main").style.backgroundColor = "#1e1e1e";
+
+        }
+    </script>
+</body>
+
+</html>
